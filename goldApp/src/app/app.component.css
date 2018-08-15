@@ -1,0 +1,34 @@
+.places{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 20px;
+    background: rgb(140, 225, 140);
+}
+.sonuclar{
+    width: 920px;
+    height: 300px;
+    overflow: auto;
+    background: grey;
+    color: whitesmoke;
+    margin-left: 180px;
+}
+.savedgames{
+    width: 130px;
+    height: 350px;
+    position: absolute;
+    background: rgb(1, 1, 38);
+    overflow: auto; 
+    margin-left: 20px;
+    margin-top: 240px;
+}
+.savedgame{
+    width: 130px;
+    height: 30px;
+    color: white;
+    margin-top: 20px;
+    font-size: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    /* border: 1px solid black; */
+}

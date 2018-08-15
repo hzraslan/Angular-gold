@@ -1,0 +1,40 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+    <div class="savedgames">
+        <div class="savedgame" *ngFor="let game of games">
+          <h4>{{game.name}} {{game.createdAt}}</h4>
+          <p> {{game.gold}}</p>
+          <button (click)="deleteGame(game._id)">Delete!</button>
+        </div>
+      </div>
+  <h1>Total gold:{{golds}} </h1>
+  <button (click)='save()'>Save</button>
+  <div class="places">
+    <h2>Farm</h2>
+    <p>Earn 2 - 5 gold</p>
+    <button (click)="farm()" >Farm!</button>
+  </div>
+  <div class="places">
+    <h2>Cave</h2>
+    <p>Earn 5 - 10 gold</p>
+    <button (click)="cave()" >Cave!</button>
+  </div>
+  <div class="places">
+    <h2>House</h2>
+    <p>Earn 7 - 15 gold</p>
+    <button (click)="house()" >Cave!</button>
+  </div>
+  <div class="places">
+      <h2>Casino</h2>
+      <p>Earn or loose 100 gold</p>
+      <button (click)="casino()" >Casino!</button>
+  </div>
+  <button (click)='restart()'>Restart</button>
+  
+  <div class="sonuclar">
+    <h3 *ngFor='let result of results'>{{result }}</h3>
+  </div>
+    
+  
+  
+
